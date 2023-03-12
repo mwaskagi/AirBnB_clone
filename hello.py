@@ -1,20 +1,13 @@
 #!/usr/bin/python3
-import cmd
 """
-    Simple Command Hello worlld
+    Class Square that defines a square
 """
 
 
-class HelloWorld(cmd.Cmd):
+class Square():
     """
-        HelloWorld Class
+        Square Class
     """
 
-    def do_greet(self, line):
-        print ("Hello")
-
-    def do_EOF(self, line):
-        return True
-
-if __name__ == '__main__':
-    HelloWorld().cmdloop()
+    def __init__(self, size_square):
+        self.__size = size_square
